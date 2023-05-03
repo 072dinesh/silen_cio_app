@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="24dp"
+            tools:context=".registrationfragment.phone.ContinuePhoneFragment">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+
+                        android:layout_marginEnd="25dp"
+                        android:src="@drawable/group"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imgnosi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="70dp"
+                        android:src="@drawable/noisecoinx"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_con"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/dm_sans"
+                        android:text="Register with Silencio"
+                        android:textColor="@color/textblue"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/imgnosi"
+                        app:layout_constraintStart_toStartOf="@+id/imgnosi"
+                        app:layout_constraintTop_toBottomOf="@+id/imgnosi" />
+
+                    <TextView
+                        android:id="@+id/text_descriptions"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginEnd="43dp"
+                        android:fontFamily="@font/dm_sans"
+                        android:lineHeight="28dp"
+                        android:text="@string/Register_description"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_lite_blue"
+                        android:textSize="18sp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_con" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/edit_continue"
+                        style="@style/Custom_Button_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="37dp"
+                        android:textSize="18sp"
+                        android:layout_marginTop="81dp"
+                        android:backgroundTint="@color/bluish_color"
+                        android:layout_marginEnd="37dp"
+                        android:text="Continue with Phone Number"
+                        android:textStyle="bold"
+                        app:cornerRadius="30dp"
+                        android:padding="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_descriptions">
+
+                    </com.google.android.material.button.MaterialButton>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btncode"
+                        style="@style/Custom_Button_Styles"
+                        android:layout_width="0dp"
+                        android:padding="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:textAlignment="center"
+                        android:text="Continue with Apple"
+                        app:icon="@drawable/applelogo"
+                        android:textStyle="bold"
+                        app:iconGravity="textStart"
+                        app:cornerRadius="30dp"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@+id/edit_continue"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/edit_continue"
+                        app:layout_constraintTop_toBottomOf="@+id/edit_continue">
+
+                    </com.google.android.material.button.MaterialButton>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="109dp"
+                        android:layout_marginTop="148dp"
+                        android:layout_marginEnd="109dp"
+                        android:fontFamily="@font/dm_sans"
+                        android:lineHeight="21dp"
+                        android:text="Already have an account?"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_grey"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btncode" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
+
+
+

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">silencio_App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="welcome_code_description">If you don’t have any friends using Silencio try pressing “Feeling lucky” to see if you get referred by one of our existing members :)</string>
+    <string name="Register_description">Go ahead and create your account now using your phone number or Apple ID.</string>
+    <string name="Phone_description">Please specify your phone number in order to use our service.</string>
+    <string name="account_description">You need to specify your full name and also choose a nickname in order to use our service.</string>
+    <string name="create_password_description">Your password must have at least 8 characters and contain one special character or number.</string>
+    <string name="wallet_forment">%1$.3f you . </string>
+    <string name="wallet_friend">%1$.3f friends</string>
+    <string name="measure_details"> 1. Do not talk directly over the phone \n 2. Lift your phone in the air while recording \n 3. Longer measurements are always better \n 4. Have fun!</string>
+    <string name="no_Internet">no internet</string>
+    <string name="something_went_wrong">something went wrong</string>
+    <string name="wallet_time">Last active %1$s </string>
+    <string name="invite_string_formatter">Hi there! Join the world\'s biggest noise mapping network. Take the first step to fighting Noise Pollution while earning Noise Coins. Follow this link https://apps.apple.com/us/app/silencionework/id6444363412 to download the app and use my username \"%1$s\" as your invitation code when signing up.</string>
+</resources>

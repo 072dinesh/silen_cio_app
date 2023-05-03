@@ -1,0 +1,60 @@
+package com.example.silencio_app.ditailsfragment.home
+
+import android.app.Application
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.viewModelScope
+import com.example.silencio_app.R
+import com.example.silencio_app.data.source.WalletDataSource
+import com.example.silencio_app.ditailsfragment.wallet.resoruce.EarningRes
+import com.example.silencio_app.local.UserDao
+import com.example.silencio_app.util.BaseViewModel
+import com.example.silencio_app.util.NetworkResult
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.launch
+import javax.inject.Inject
+
+@HiltViewModel
+class HomeViewModel @Inject constructor(
+    application: Application,
+    private val walletDataSource: WalletDataSource,
+    private val userDao: UserDao
+): BaseViewModel(application){
+    val users = userDao.getUser()
+
+    private val _WalletData = MutableLiveData<NetworkResult<EarningRes>>()
+    val WalletData: LiveData<NetworkResult<EarningRes>>
+        get() = _WalletData
+
+
+
+    var mContext = application
+
+    fun getPostdatainvaidcode() {
+        viewModelScope.launch {
+
+
+            if (isConnected()){
+
+                _WalletData.value = NetworkResult.Loading()
+                try {
+                    val response =  walletDataSource.getDataFromAPIWalletHstory()
+                    _WalletData.value = handleResponse(response=response)
+
+                }
+                catch (e:java.lang.Exception)
+                {
+                    e.printStackTrace()
+                    _WalletData.value = NetworkResult.Error(
+                        mContext.getString(R.string.no_Internet)
+                    )
+                }
+
+
+            }
+
+
+
+        }
+    }
+}

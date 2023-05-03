@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.silencio_app.login.LoginViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="24dp"
+            tools:context=".login.LoginFragment">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+
+                        android:layout_marginEnd="25dp"
+                        android:src="@drawable/group"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/imgnosi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="70dp"
+                        android:src="@drawable/noisecoinx"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_con"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/dm_sans"
+                        android:text="Login"
+                        android:textColor="@color/textblue"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/imgnosi"
+                        app:layout_constraintStart_toStartOf="@+id/imgnosi"
+                        app:layout_constraintTop_toBottomOf="@+id/imgnosi" />
+
+                    <TextView
+                        android:id="@+id/text_descriptions"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="42dp"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginEnd="42dp"
+                        android:fontFamily="@font/dm_sans"
+                        android:lineHeight="28dp"
+
+                        android:text="@string/Phone_description"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_lite_blue"
+                        android:textSize="18sp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_con" />
+
+                    <TextView
+                        android:id="@+id/txtcode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="37dp"
+                        android:layout_marginTop="33dp"
+                        android:layout_marginEnd="37dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:lineHeight="15dp"
+
+                        android:text="Invite Code"
+                        android:textSize="10sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_descriptions" />
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/edit_country_codes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_backg"
+                        android:hint="Enter Code"
+                        android:padding="10dp"
+
+                        android:maxLength="10"
+                        android:text="+91(India)"
+                        android:minHeight="64dp"
+                        android:paddingLeft="25dp"
+                        app:layout_constraintEnd_toEndOf="@+id/txtcode"
+                        app:layout_constraintStart_toStartOf="@+id/txtcode"
+                        app:layout_constraintTop_toBottomOf="@+id/txtcode">
+
+                    </com.hbb20.CountryCodePicker>
+
+
+                    <TextView
+                        android:id="@+id/txtcountrycode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="37dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/text_grey"
+                        android:layout_marginEnd="37dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:lineHeight="15dp"
+                        android:text="Phone Number"
+                        android:textSize="10sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edit_country_codes" />
+
+
+                    <EditText
+                        android:id="@+id/edit_phone_numbers"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_backg"
+                        android:hint="Enter Number"
+                        android:text="@={viewmodel.phoneNumber}"
+                        android:maxLength="10"
+                        android:minHeight="64dp"
+                        android:paddingLeft="25dp"
+                        app:layout_constraintEnd_toEndOf="@+id/txtcountrycode"
+                        app:layout_constraintStart_toStartOf="@+id/txtcountrycode"
+                        app:layout_constraintTop_toBottomOf="@+id/txtcountrycode">
+
+                    </EditText>
+
+
+                    <TextView
+                        android:id="@+id/txt_password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:lineHeight="15dp"
+                        android:text="Phone Number"
+                        android:textColor="@color/text_grey"
+                        android:textSize="10sp"
+                        app:layout_constraintEnd_toEndOf="@+id/edit_phone_numbers"
+                        app:layout_constraintStart_toStartOf="@+id/edit_phone_numbers"
+                        app:layout_constraintTop_toBottomOf="@+id/edit_phone_numbers" />
+
+
+                    <EditText
+                        android:id="@+id/edit_password_"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_backg"
+                        android:hint="Enter password"
+
+                        android:text="@={viewmodel.password}"
+
+                        android:minHeight="64dp"
+                        android:paddingLeft="25dp"
+                        app:layout_constraintEnd_toEndOf="@+id/txt_password"
+                        app:layout_constraintStart_toStartOf="@+id/txt_password"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_password">
+
+                    </EditText>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btncode"
+                        style="@style/Custom_Button_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+
+                        android:backgroundTint="@color/bluish_color"
+                        android:fontFamily="@font/dm_sans"
+
+                        android:paddingVertical="17dp"
+                        android:text="Continue"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:cornerRadius="30dp"
+                        app:layout_constraintEnd_toEndOf="@+id/edit_password_"
+                        app:layout_constraintStart_toStartOf="@+id/edit_password_"
+                        app:layout_constraintTop_toBottomOf="@+id/edit_password_">
+
+                    </com.google.android.material.button.MaterialButton>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="109dp"
+                        android:layout_marginTop="53dp"
+                        android:layout_marginEnd="109dp"
+                        android:fontFamily="@font/dm_sans"
+                        android:lineHeight="21dp"
+                        android:text="Not registration?"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_grey"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btncode" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
+
+
+

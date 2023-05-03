@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "644989269936",
+    "firebase_url": "https://exam115-55491-default-rtdb.firebaseio.com",
+    "project_id": "exam115-55491",
+    "storage_bucket": "exam115-55491.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644989269936:android:1c43ca809d0debbdd60875",
+        "android_client_info": {
+          "package_name": "com.example.silencio_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644989269936-jol8f7l63pkj8tuhasnecgfoiam7as74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDsVixLxSgtIJq5tqPw8IY0Kjf-JfIU44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644989269936-jol8f7l63pkj8tuhasnecgfoiam7as74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

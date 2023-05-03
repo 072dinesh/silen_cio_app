@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="103dp"
+     tools:context=".onboardingfragment.OnboardingViewFragment">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/volume_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textcomunity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/dm_sans"
+        android:gravity="left"
+        android:lineHeight="26dp"
+        android:text="the first community to fight noise pollution"
+        android:textColor="@color/textblue"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="Run silencio once a day to help us build a global community driven noise pollution map."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textcomunity"
+        app:layout_constraintStart_toStartOf="@+id/textcomunity"
+        app:layout_constraintTop_toBottomOf="@+id/textcomunity" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+</layout>

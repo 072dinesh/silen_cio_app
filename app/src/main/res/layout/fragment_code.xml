@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+        <variable
+            name="viewcode"
+            type="com.example.silencio_app.registrationfragment.invitecode.CodeViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:paddingBottom="40dp"
+    tools:context=".registrationfragment.invitecode.CodeFragment">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+
+                    android:layout_marginEnd="25dp"
+                    android:src="@drawable/group"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imgnosi"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/ic_invaitcode"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="Welcome to Silencio!"
+                    android:textColor="@color/textblue"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imgnosi"
+                    app:layout_constraintStart_toStartOf="@+id/imgnosi"
+                    app:layout_constraintTop_toBottomOf="@+id/imgnosi" />
+
+                <TextView
+                    android:id="@+id/text_descriptions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginEnd="42dp"
+                    android:fontFamily="@font/dm_sans"
+                    android:lineHeight="28dp"
+
+                    android:text="@string/welcome_code_description"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_lite_blue"
+                    android:textSize="18sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_con" />
+
+                <TextView
+                    android:id="@+id/txtcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginEnd="37dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:lineHeight="15dp"
+                    android:textColor="@color/text_grey"
+                    android:text="Invite Code"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_descriptions" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:minHeight="64dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginEnd="37dp"
+                    android:background="@drawable/edt_backg"
+                    android:hint="Enter Code"
+                    android:text="@={viewcode.code}"
+                    android:paddingLeft="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtcode">
+                </EditText>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btncode_bottom"
+                    android:theme="@style/Theme.Silencio_App"
+                    android:textAllCaps="false"
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/dm_sans"
+                    android:text="Continue"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="30dp"
+                    app:layout_constraintEnd_toEndOf="@+id/editText"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editText"
+                    app:layout_constraintTop_toBottomOf="@+id/editText"/>
+
+                <TextView
+                    android:id="@+id/text_already_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="109dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="109dp"
+                    android:fontFamily="@font/dm_sans"
+                    android:lineHeight="21dp"
+                    android:text="Already have an account?"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_grey"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="141dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="141dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btncode_bottom"
+                    app:srcCompat="@drawable/discord_logo" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
+
+
+

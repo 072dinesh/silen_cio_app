@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/onboardingFragment">
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.silencio_app.onboardingfragment.OnboardingFragment"
+        android:label="OnboardingFragment"
+        tools:layout="@layout/fragment_onboarding">
+
+        <action
+            android:id="@+id/action_onboardingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_onboardingFragment_to_codeFragment"
+            app:destination="@id/codeFragment" />
+    </fragment>
+<!--    mmdhhd-->
+    <dialog
+        android:id="@+id/codeFragment"
+        android:name="com.example.silencio_app.registrationfragment.invitecode.CodeFragment"
+        android:label="RegistrationFragment"
+        tools:layout="@layout/fragment_code"
+        >
+<!--        <action-->
+<!--            android:id="@+id/action_registrationFragment_to_onboardingFragment"-->
+<!--            app:destination="@id/onboardingFragment" />-->
+        <action
+            android:id="@+id/action_registrationFragment_to_continuePhoneFragment"
+            app:destination="@id/continuePhoneFragment" >
+
+        </action>
+        <action
+            android:id="@+id/action_codeFragment_to_loginFragment5"
+            app:destination="@id/loginFragment" />
+
+
+    </dialog>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.silencio_app.ditailsfragment.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"
+        >
+
+        </fragment>
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="com.example.silencio_app.ditailsfragment.wallet.WalletFragment"
+        android:label="WalletFragment"
+        tools:layout="@layout/fragment_wallet"
+        />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.silencio_app.ditailsfragment.map.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_mapFragment_to_exampleReferencesFragment"
+            app:destination="@id/exampleReferencesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.silencio_app.ditailsfragment.shop.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+    <dialog
+        android:id="@+id/measureFragment"
+        android:name="com.example.silencio_app.ditailsfragment.measuring.MeasureFragment"
+        android:label="MeasureFragment"
+        tools:layout="@layout/fragment_measure"
+        />
+    <dialog
+        android:id="@+id/continuePhoneFragment"
+        android:name="com.example.silencio_app.registrationfragment.phone.ContinuePhoneFragment"
+        android:label="ContinuePhoneFragment"
+        tools:layout="@layout/fragment_continue_phone"
+        >
+        <action
+            android:id="@+id/action_continuePhoneFragment_to_registerPhoneNumberFragment"
+            app:destination="@id/registerPhoneNumberFragment" >
+        </action>
+        <argument
+            android:name="UserX"
+            app:argType="com.example.silencio_app.registrationfragment.model.RegisterUserRequestModel" />
+
+    </dialog>
+
+
+    <dialog
+        android:id="@+id/registerPhoneNumberFragment"
+        android:name="com.example.silencio_app.registrationfragment.phone.RegisterPhoneNumberFragment"
+        android:label="RegisterPhoneNumberFragment"
+        tools:layout="@layout/fragment_register_phone_number">
+        <argument
+            android:name="RegiterUser"
+            app:argType="com.example.silencio_app.registrationfragment.model.RegisterUserRequestModel" />
+        <action
+            android:id="@+id/action_registerPhoneNumberFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/createAccountFragment"
+        android:name="com.example.silencio_app.registrationfragment.account.CreateAccountFragment"
+        android:label="CreateAccountFragment"
+        tools:layout="@layout/fragment_create_account">
+        <argument
+            android:name="regiteruser"
+            app:argType="com.example.silencio_app.registrationfragment.model.RegisterUserRequestModel" />
+        <action
+            android:id="@+id/action_createAccountFragment_to_createPassswordFragment"
+            app:destination="@id/createPassswordFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/createPassswordFragment"
+        android:name="com.example.silencio_app.registrationfragment.password.CreatePassswordFragment"
+        android:label="CreatePassswordFragment"
+        tools:layout="@layout/fragment_create_passsword"
+        >
+        <argument
+            android:name="regiteruser"
+            app:argType="com.example.silencio_app.registrationfragment.model.RegisterUserRequestModel" />
+        <action
+            android:id="@+id/action_createPassswordFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_createPassswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/loginFragment"
+        android:name="com.example.silencio_app.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"
+        >
+<!--        <argument-->
+<!--           android:name="regiteruser"-->
+<!--            app:argType="com.example.silencio_app.registrationfragment.model.RegisterUserRequestModel" />-->
+<!--        -->
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.silencio_app.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.silencio_app.registrationfragment.changepassword.ChangePasswordFragment"
+        android:label="ChangePasswordFragment"
+        tools:layout="@layout/fragment_change_password"
+        />
+    <dialog
+        android:id="@+id/exampleReferencesFragment"
+        android:name="com.example.silencio_app.soundlevels.ExampleReferencesFragment"
+        android:label="ExampleReferencesFragment"
+        tools:layout="@layout/fragment_example_references"
+        />
+
+</navigation>

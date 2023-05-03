@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp"
+    tools:context=".soundlevels.ExampleReferencesFragment">
+
+
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound Levels"
+        android:textSize="18sp"
+        android:lineHeight="27sp"
+        android:textColor="@color/blue_2"
+        app:layout_constraintBottom_toBottomOf="@+id/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cancel" />
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/blue_2"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:lineHeight="26sp"
+        android:text="Example References"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        android:lineHeight="27sp"
+        android:text="Whispering"
+        app:layout_constraintEnd_toStartOf="@+id/textView44"
+        app:layout_constraintStart_toStartOf="@+id/textView42"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        android:lineHeight="27sp"
+        android:text="30-39 dB"
+        app:layout_constraintBottom_toBottomOf="@+id/textView43"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView43" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/component23"
+        app:layout_constraintEnd_toEndOf="@+id/textView44"
+        app:layout_constraintStart_toStartOf="@+id/textView43"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gra_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    ---
+
+    <TextView
+        android:id="@+id/textlibrary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Library"
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        android:lineHeight="27sp"
+        app:layout_constraintEnd_toStartOf="@+id/soutn_library"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/soutn_library"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:text="40-49 dB"
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        android:lineHeight="27sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textlibrary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textlibrary" />
+
+    <ImageView
+        android:id="@+id/img_library"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/component3"
+        app:layout_constraintEnd_toEndOf="@+id/soutn_library"
+        app:layout_constraintStart_toStartOf="@+id/textlibrary"
+        app:layout_constraintTop_toBottomOf="@+id/textlibrary" />
+
+    <View
+        android:id="@+id/views"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gra_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_library" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Moderate Rain"
+        android:lineHeight="27sp"
+
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView48"
+        app:layout_constraintStart_toStartOf="@+id/img_library"
+        app:layout_constraintTop_toBottomOf="@+id/views" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lineHeight="27sp"
+        android:text="50-59 dB"
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView45"
+        app:layout_constraintEnd_toEndOf="@+id/soutn_library"
+        app:layout_constraintTop_toTopOf="@+id/textView45" />
+
+    <View
+        android:id="@+id/view_moderate"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gra_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_moderate" />
+
+    <ImageView
+        android:id="@+id/img_moderate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="9dp"
+        android:src="@drawable/component4"
+        app:layout_constraintEnd_toEndOf="@+id/textView48"
+        app:layout_constraintStart_toStartOf="@+id/textView45"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Converstation"
+        android:lineHeight="27sp"
+
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView51"
+        app:layout_constraintStart_toStartOf="@+id/textView45"
+        app:layout_constraintTop_toBottomOf="@+id/view_moderate" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60-69 dB"
+        android:lineHeight="27sp"
+
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView50"
+        app:layout_constraintEnd_toEndOf="@+id/textView48"
+        app:layout_constraintTop_toTopOf="@+id/textView50" />
+
+    <ImageView
+        android:id="@+id/img_converstation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/component5"
+        app:layout_constraintEnd_toEndOf="@+id/textView51"
+        app:layout_constraintStart_toStartOf="@+id/textView50"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <View
+        android:id="@+id/view_converstation"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gra_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_converstation" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Vacuum Cleaner"
+        android:lineHeight="27sp"
+
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView53"
+        app:layout_constraintStart_toStartOf="@+id/textView50"
+        app:layout_constraintTop_toBottomOf="@+id/view_converstation" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:lineHeight="27sp"
+        android:text="70-79 dB"
+
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView52"
+        app:layout_constraintEnd_toEndOf="@+id/textView51"
+        app:layout_constraintTop_toTopOf="@+id/textView52" />
+
+    <ImageView
+        android:id="@+id/img_vacuumcleaner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/component7"
+        app:layout_constraintEnd_toEndOf="@+id/textView53"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView52"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <View
+        android:id="@+id/view_vacuumcleaner"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gra_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="90 dB exposure limit: 4 hours/ 7 days"
+        app:layout_constraintEnd_toEndOf="@+id/img_vacuumcleaner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_vacuumcleaner"
+        app:layout_constraintTop_toBottomOf="@+id/img_vacuumcleaner" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineHeight="27sp"
+        android:text="Loud Restaurant"
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView56"
+        app:layout_constraintStart_toStartOf="@+id/textView54"
+        app:layout_constraintTop_toBottomOf="@+id/view_vacuumcleaner" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="27sp"
+        android:text="80-89 dB"
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView55"
+        app:layout_constraintEnd_toEndOf="@+id/textView54"
+        app:layout_constraintTop_toTopOf="@+id/textView55" />
+
+    <ImageView
+        android:id="@+id/img_LoudRestaurabt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/component7"
+        app:layout_constraintEnd_toEndOf="@+id/textView56"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView55"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <View
+        android:id="@+id/view_LoudRestaurabt"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gra_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewloud" />
+
+    <TextView
+        android:id="@+id/textViewloud"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="90 dB exposure limit: 4 hours/ 7 days"
+        app:layout_constraintEnd_toEndOf="@+id/img_LoudRestaurabt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_LoudRestaurabt"
+        app:layout_constraintTop_toBottomOf="@+id/img_LoudRestaurabt" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Motorcycle"
+        android:lineHeight="27sp"
+
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView58"
+        app:layout_constraintStart_toStartOf="@+id/textViewloud"
+        app:layout_constraintTop_toBottomOf="@+id/view_LoudRestaurabt" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:lineHeight="27sp"
+        android:text="90-99 dB"
+
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView57"
+        app:layout_constraintEnd_toEndOf="@+id/textViewloud"
+        app:layout_constraintTop_toTopOf="@+id/textView57" />
+
+
+    <ImageView
+        android:id="@+id/img_Motorcycle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/component8"
+        app:layout_constraintEnd_toEndOf="@+id/textView58"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView57"
+        app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+    <TextView
+        android:id="@+id/textMotorcycle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="90 dB exposure limit: 4 hours/ 7 days"
+        app:layout_constraintEnd_toEndOf="@+id/img_Motorcycle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_Motorcycle"
+        app:layout_constraintTop_toBottomOf="@+id/img_Motorcycle" />
+
+    <View
+        android:id="@+id/view_Motorcycle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gra_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMotorcycle" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineHeight="27sp"
+        android:text="Ambulance Siren"
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView60"
+        app:layout_constraintStart_toStartOf="@+id/textMotorcycle"
+        app:layout_constraintTop_toBottomOf="@+id/view_Motorcycle" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="27sp"
+        android:text="100-109 dB"
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView59"
+        app:layout_constraintEnd_toEndOf="@+id/textMotorcycle"
+        app:layout_constraintTop_toTopOf="@+id/textView59" />
+
+    <ImageView
+        android:id="@+id/img_Ambulance_Siren"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/component9"
+        app:layout_constraintEnd_toEndOf="@+id/textView60"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView59"
+        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    <TextView
+        android:id="@+id/textAmbulance_Siren"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="100 dB exposure limit: 4 hours/ 7 days"
+        app:layout_constraintEnd_toEndOf="@+id/img_Ambulance_Siren"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_Ambulance_Siren"
+        app:layout_constraintTop_toBottomOf="@+id/img_Ambulance_Siren" />
+
+    <View
+        android:id="@+id/view_Ambulance_Siren"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gra_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAmbulance_Siren" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineHeight="27sp"
+        android:text="Rock Concert"
+
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView62"
+        app:layout_constraintStart_toStartOf="@+id/textAmbulance_Siren"
+        app:layout_constraintTop_toBottomOf="@+id/view_Ambulance_Siren" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:lineHeight="27sp"
+        android:text="110-119 dB"
+        android:textColor="@color/blue_2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView61"
+        app:layout_constraintEnd_toEndOf="@+id/textAmbulance_Siren"
+        app:layout_constraintTop_toTopOf="@+id/textView61" />
+
+    <ImageView
+        android:id="@+id/img_Rock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/component10"
+        app:layout_constraintEnd_toEndOf="@+id/textView60"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView59"
+        app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="110 dB exposure limit: 4 minutes/ 7 days "
+        app:layout_constraintEnd_toEndOf="@+id/img_Rock"
+        app:layout_constraintStart_toStartOf="@+id/img_Rock"
+        app:layout_constraintTop_toBottomOf="@+id/img_Rock" />
+
+    <View
+        android:id="@+id/view_Rock"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gra_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+    <ImageView
+        android:id="@+id/view_home"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="135dp"
+        android:src="@drawable/home_indicator"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_Rock" />
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="23dp"
+        android:lineHeight="26sp"
+        android:textStyle="bold"
+        android:text="How you perceive sounds "
+        android:textColor="@color/blue_2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_home" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="18dp"
+        android:textSize="18sp"
+        android:lineHeight="27sp"
+        android:textAlignment="textStart"
+        android:text="Perceiving sounds involves a series of interactions within the ear that enable the conversion of sound waves into signals the brain comprehends. As sound waves reach the ear, they initiate vibrations in the eardrum and bones of the inner ear. Tiny, fragile hair cells inside the inner ear transform these vibrations into electrical signals transmitted to the brain. Consequently, the brain interprets these signals as distinct sounds."
+        app:layout_constraintEnd_toEndOf="@+id/textView65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView65" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:lineHeight="27sp"
+        android:text="How soun is measured"
+        android:textColor="@color/blue_2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="23dp"
+        android:lineHeight="27sp"
+        android:text="Sound levels are measured in decibels (dB) and are generally considered loud when they exceed 80 decibels. Both the volume of sounds and the duration of noise exposure can affect your hearing capacity. Short-term exposure to extremely high volumes, such as noise from a nearby construction site, can result in temporary hearing loss. On the other hand, prolonged, repeated exposure to loud noise can harm the hair cells in the inner ear, leading to permanent hearing loss. The louder the sounds, the less time you can listen to them without risking hearing damage. For instance, you can tolerate city traffic (80 dB) for 5 1/2 hours per day without any problems. In contrast, exposure to motorcycle noise (90 dB) should not exceed half an hour per day."
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="23dp"
+        android:textColor="@color/blue_2"
+        android:lineHeight="27sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Protct your hearing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="23dp"
+        android:lineHeight="27sp"
+        android:text="When anticipating exposure to elevated noise levels, it's essential to take straightforward measures to safeguard your hearing. Utilizing earplugs, wearing noise-canceling headphones, or seeking out a quieter setting are all efficient approaches to protect your hearing and minimize noise exposure. Furthermore, it's crucial to allow your ears some rest after extended exposure to loud sounds. "
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView69" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+</layout>

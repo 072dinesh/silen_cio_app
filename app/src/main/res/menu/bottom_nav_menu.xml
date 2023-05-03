@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homeFragment"
+        android:icon="@drawable/vectorhome"
+        android:title="Home"/>
+
+    <item android:id="@+id/walletFragment"
+        android:icon="@drawable/vectores"
+        android:title="Wallet"/>
+
+    <item android:id="@+id/measureFragment"
+        android:title="item"
+        >
+
+    </item>
+
+    <item android:id="@+id/mapFragment"
+        android:icon="@drawable/vectornew"
+        android:title="Map"/>
+    <item android:id="@+id/shopFragment"
+        android:icon="@drawable/vectorstop"
+        android:title="Shop"/>
+
+</menu>

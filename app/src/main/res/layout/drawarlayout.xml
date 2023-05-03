@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <include
+        android:id="@+id/activity_main"
+        layout="@layout/activity_main"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </include>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <include
+                android:id="@+id/nav_header"
+                layout="@layout/nav_header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+
+
+        </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
+</layout>
